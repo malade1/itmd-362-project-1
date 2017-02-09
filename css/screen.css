@@ -22,6 +22,13 @@ h1 {
   padding-top: 0.512em;
 }
 
+  p{
+  padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
+  padding-top: 0.512em;
+  padding-left: 2.512em;
+  padding-right: 2.512em;
+}
+
 label, input {
   box-sizing: border-box;
   display: block;
@@ -31,6 +38,11 @@ label, input {
   margin: 0;
   padding: 0;
 }
+
+.register {
+  width: 60%;
+  padding-left: 2.512em
+ }
 
 #input-email {
   padding-top: 1.222em;
@@ -107,3 +119,5 @@ html {
       height: auto;
       padding-top: 0.625em;
     }
+    
+    

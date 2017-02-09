@@ -1,0 +1,109 @@
+/*==== BASE STYLES === */
+/* Setting type to aa minor third modular scale
+http://www.modularscale.com/?18&&2&web&text
+*/
+html {
+  font-size: 1.125em; /* 18px/16*/
+  line-height: 1.222em; /* 22px/18*/
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222; /* #000 // rgb(0,0,0); */
+  background-color: #EEE; /* #FFF */
+}
+
+#page {
+  padding: 1.25em 1.25em; /* 22.5px @ 18px em */
+}
+
+h1 {
+  font-size: 2.441em; /* 43.945px @ 18px em */
+  line-height: 1.536em; /* 67.5px @ 43.945px em */
+  text-align: center;
+  padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
+  padding-top: 0.512em;
+}
+
+label, input {
+  box-sizing: border-box;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+#input-email {
+  padding-top: 1.222em;
+  padding-bottom: 1.222em;
+}
+
+#input-submit {
+  padding-top: 1.222em;
+}
+
+label [for="name"] {
+  font-weight: bold;
+  padding-top: 1.222em
+}
+
+img {
+  display: block;
+  max-height: 100%;
+  padding-bottom: 1.25em;
+  margin: 0 auto;
+}
+
+/* ===== LAYOUT STYLES ===== */
+html {
+  border-top: 2.6875em  #142736; /*  43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+}
+
+
+
+/* ===== STATE STYLES ===== */
+@media screen and (min-width: 10em) and (max-width: 30em) {
+  body {
+    font-size: 0.876em;
+    width: 100%;
+  }
+  header {
+    text-align: left;
+    margin-bottom: 1em;
+    padding-bottom: 1.25em;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.3em;
+  }
+  
+  
+   img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+    @media screen and (min-width: 30em) and (max-width: 60em) {
+    body {
+      font-size: 1.1em;
+      width: 100%;
+    }
+    header {
+      text-align: left;
+      margin-bottom: 1em;
+      padding-bottom: 1.25em;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.85em;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    audio {
+      width: 100%;
+      height: auto;
+      padding-top: 0.625em;
+    }

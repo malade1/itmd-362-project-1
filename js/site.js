@@ -20,7 +20,7 @@ jQuery(function($){
   $('#form')[0].reset();
 }
   $('#form').submit(function(event) {
-    alert('Thank you! Your response has been recorded!');
+    alert('Thank you! We will get back to you ASAP!');
     event.preventDefault();
 
     clearForm();

@@ -8,8 +8,8 @@ jQuery(function($) {
   
   // jQuery 3.x-style ready event and locally scoped $
   $('#email).on('keyup focus on blur', function() {
-    var currentValuename = $(this).val();
-    var validPattern =$(this).attr('pattern');
+    var currentValue = $(this).val();
+    var validPattern = $(this).attr('pattern');
     if(currentValue.match(validPattern)){
   $('#submit').addClass('active');
     } 

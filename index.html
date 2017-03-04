@@ -4,30 +4,32 @@
   <title>Auto Sign-Up</title>
   <meta charset="utf-8">
   <meta content="width=device-width,initial-scale=1.0,shrink-to-fit=no" name="viewport">
-  <link href="css/screen.css" media="screen" rel="stylesheet">
+  <link  rel="stylesheet" media="screen" href="css/screen.css">
 </head>
 <body>
-  <main id="content">
+   <form method="get" id="register" action="#null">
     <h1>Chicago Auto Show!!!</h1>
-       <figure id="content">        
+       <figure id="cont">        
         <img src = "img/bmw.jpeg" 
           alt = ""  />
       </figure>
     <p class="auto"> 
       You can sign up for Chicago auto show to see varieties of cars and to receive updated information about new cars.
     </p> 
-    <form action="#null" class="register" method="post">
-      <div class="name">
-        <label for="name">Name:</label> <input id="name" name="name" placeholder="Full Name" type="text">
-      </div>
-      <div>
-        <label for="email">E-mail:</label> <input id="email" name="Email" placeholder="sample@sample.com" required="" type="email">
-      </div>
-      <div class="submit-button">
+      <ol>
+        <li id="input-name">
+        <label for="name">Name:</label> 
+        <input type="name" name="name" placeholder="Full Name" id="name"/>  
+      </li>
+      <li id="input-email">
+        <label for="email">E-mail:</label> 
+        <input id="email" name="Email" placeholder="sample@example.com" pattern="^.+@.+$" type="email"/>
+      </li>
+      <li id="input-submit">
         <input class="button" type="submit" value="Sign Up">
-      </div>
-    </form>
-  </main>
+      </li>
+   </ol>
+   </form>
     <footer id= "footer">
       <p>2017, Moses Web Services, Inc. All rights reserved</p>
     </footer>

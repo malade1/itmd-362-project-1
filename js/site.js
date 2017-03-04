@@ -1,8 +1,12 @@
+// Tell jQuery to give up the dollar sign
 $.noConflict();
+
 jQuery(function($) {
  $('html').removeClass('nojs');
   $('html').addClass('hasjs');
   
+  
+  // jQuery 3.x-style ready event and locally scoped $
   $('#email).on('keyup focus on blur', function() {
     var currentValuename = $(this).val();
     var validPattern =$(this).attr('pattern');

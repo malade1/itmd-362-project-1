@@ -1,145 +1,135 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 /* stylelint-disable*/
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
-
 /* ===== BASE STYLES ===== */
-
 /*
-  Major Sixth Modular Scale:
-  http://www.modularscale.com/?22&px&1.667&web&text
+Major Sixth Modular Scale:
+http://www.modularscale.com/?22&px&1.667&web&text
 */
-
 html {
   font-family: 'Bembo W04', Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
-  font-size: 22.5px; /* 18px/16*/
-  line-height: 28px; /* 22px/18*/
+  font-size: 1.75em; /* 28px/16*/
+  line-height: 0.9286em; /* 26px/28*/
   color: #222; /* #000 // rgb(0,0,0); */
   background-color: #EEE; /* #FFF */
   text-rendering: optimizeLegibility;
 }
-
 #page {
-  padding: 1.25em 1.25em; /* 22.5px @ 18px em */
+  padding: .7857em .7857em; /* 22px @ 28px em */
 }
-
 h1{
-  font-size: 35.156px;
-  line-height:56px;
+  font-size: 1.2556em; /* 35.156px @ 28px em */
+  line-height: 1.593em; /* 56px /35.156px em */ 
   text-align: center;
-    padding-top: 18px;
-    
+  padding-top: 1.22em ;
 }
-   
 p{
-     padding-bottom: 28px;
-   }
+  padding-bottom: 0.5em;
+}
 img, audio, video {
   display: block;
   max-width: 100%;
-   height: auto;
-   padding-top: 18px;
-    padding-bottom: 10px;
-     
-   }
-     
-   
- label, input {
-   box-sizing: border-box;
-   width: 40%;
-   display: block;
-   font-family: inherit;
-   font-size:inherit;
-   border: 0;
-   margin: 0;
-   padding: 10px; 
-   
- }
- 
- input {
-   border: 0;
-   box-sizing: border-box;
-   border-radius: 0;
-   }
- 
- img {
+  height: auto;
+  padding-top: 1.22em;
+  padding-bottom: 1.22em;
+}
+label, input {
+  box-sizing: border-box;
+  width: 40%;
+  display: block;
+  font-family: inherit;
+  font-size:inherit;
+  border: 0;
+  margin: 0;
+  padding: .7857em;
+}
+input {
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+img {
   display: block;
   max-height: 100%;
   padding-bottom: 1.25em;
   margin: 0 auto;
 }
-
- label [for="name"] {
+label [for="name"] {
   font-weight: bold;
   padding-top: 1.222em
 }
-
 .register {
   width: 60%;
   padding-left: 2.512em
   align-auto: center;
- }
- 
- input[type="name" ]+ label{
-   display: inline;
-   
- }
-    
-    
-    #input-email {
-  padding-top: 1.222em;
- 
 }
-
+input[type="name" ]+ label{
+  display: inline;
+}
+#input-email {
+  padding-top: 1.222em;
+}
 #input-submit {
   padding-top: 1.222em;
-   padding-bottom: 1.222em;
+  padding-bottom: 1.222em;
+}
+body{
+  padding-left: 2.512em
 }
 
-body{
-   padding-left: 2.512em
+
+/*===== MODULAR STYLES===== */
+form li {
+  padding-bottm: 28px;
 }
-    
-    
-  /* LAYOUT STYLES */
-  
-   /*===== MODULAR STYLES===== */
-   form li {
-     padding-bottm: 28px;
-   }
-   
-   #submit:hover {
+#submit:hover {
   background-color: #CCCC9A;
 }
-   
-    /*======= STATE STYLES====== */
- .wf-active h1 {
+/*======= STATE STYLES====== */
+.wf-active h1 {
   font-variant-numeric: oldstyle-nums;
   -moz-font-feature-settings: "onum";
   -webkit-font-feature-settings: "onum";
   font-feature-settings: "onum";
 }
-     
- .hasjs input[type="submit"]{
-   position:absolute;
-   left: -100000px;
-   
- }
- 
-  .hasjs input[type="submit"].active {
-   position: static;
- }
- 
- 
-   img, audio {
- border: 0.444em blue;
- }
- 
- 
-   img {
-    width: 60%;
-    }
-    
+.hasjs input[type="submit"]{
+  position:absolute;
+  left: -100000px;
+}
+.hasjs input[type="submit"].active {
+  position: static;
+}
+img, audio {
+  border: 0.444em blue;
+}
+img {
+  width: 60%;
+}
+
+@media screen and (min-width: 10em) and (max-width: 30em) {
+body {
+  font-size: 0.876em;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+body {
+  font-size: 1em;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+}

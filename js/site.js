@@ -16,7 +16,7 @@ jQuery(function($){
     } else{
       $('#submit').removeClass('active');
     }
-  });
+ 
   function clearForm() {
   $('#form')[0].reset();
 }

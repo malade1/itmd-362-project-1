@@ -84,7 +84,7 @@ body{
 
 /*===== MODULAR STYLES===== */
 form li {
-  padding-bottm: 28px;
+  padding-bottm: .7887em;
 }
 #submit:hover {
   background-color: #CCCC9A;

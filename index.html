@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-   <form method="get" id="register" action="#null">
+   <form method="get" id="register" action="">
     <h1>Chicago Auto Show!!!</h1>
        <figure id="cont">        
         <img src = "img/bmw.jpeg" 
@@ -20,14 +20,15 @@
       <ol>
         <li id="input-name">
         <label for="name">Name:</label> 
-        <input type="text" name="name" placeholder="Full Name" id="name"/>  
+        <input type="text" name="name" placeholder="Full Name" id="name"  />  
       </li>
       <li id="input-email">
         <label for="email">E-mail:</label> 
         <input id="email" name="Email" placeholder="sample@example.com" pattern="^.+@.+$" type="email"/>
       </li>
       <li id="input-submit">
-        <input class="button" type="submit" value="Sign Up">
+  
+	   <input class="button" type="submit" onclick="yourJsFunction();" value="Sign Up">
       </li>
    </ol>
    </form>
@@ -35,8 +36,7 @@
    <script type= "text/javascript">
   var today = new Date();
   document.writeln( today.getFullYear());
-  </script>
-   , Moses Web Services, Inc. All rights reserved</p>
+  </script>, Moses Web Services, Inc. All rights reserved</p>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="js/site.js"></script>
 </body>

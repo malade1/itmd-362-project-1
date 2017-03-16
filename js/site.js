@@ -5,19 +5,24 @@ $.noConflict();
 jQuery(function($){
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
-    
-      $('#email).on('keyup focus blur', function(){
+
+  $('#email').on('keyup focus blur', function(){
     var currentValue = $(this).val();
-    var validPattern = $(this).attr('pattern');
-    
-    console.log(currentValue, validPattern);
-    if(currentValue.match(validPattern)){
+    var vaildPattern = $(this).attr('pattern');
+    if(currentValue.match(vaildPattern)){
       $('#submit').addClass('active');
-    } else{
+    }
+    else{
       $('#submit').removeClass('active');
     }
- 
+  });
   function clearForm() {
   $('#form')[0].reset();
 }
+  $('#form').submit(function(event) {
+    alert('Thank for signing up!');
+    event.preventDefault();
+
+    clearForm();
+  });
 });
